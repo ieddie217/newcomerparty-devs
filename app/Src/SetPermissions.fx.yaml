@@ -80,7 +80,7 @@ SetPermissions As screen:
     HostText As text:
         Default: =""
         Height: =70
-        HintText: ="Name1,Name2,Name3..."
+        HintText: ="Name"
         Size: =21
         Width: =332
         X: =40
@@ -90,7 +90,7 @@ SetPermissions As screen:
     VIPText As text:
         Default: =""
         Height: =70
-        HintText: ="Name1,Name2,Name3..."
+        HintText: ="Name"
         Size: =21
         Width: =332
         X: =40
