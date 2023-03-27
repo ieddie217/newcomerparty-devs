@@ -1,5 +1,43 @@
 SetPermissions As screen:
 
+    "HostsGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Items: =hostTable
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(96, Self.Height - 60)
+        WrapCount: =2
+        Y: =248
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =18
+            Y: =32
+            ZIndex: =1
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Icon2 As icon.CancelBadge:
+            Icon: =Icon.CancelBadge
+            OnSelect: =Remove(hostTable,ThisItem)
+            Width: =34
+            X: =130
+            Y: =18
+            ZIndex: =4
+
     StartButton As button:
         Height: =70
         OnSelect: =Navigate(RandomSeats)
@@ -12,7 +50,9 @@ SetPermissions As screen:
 
     SetHost As button:
         Height: =70
-        OnSelect: =Set(host,HostText.Text)
+        OnSelect: |-
+            =Collect(hostTable, HostText.Text);
+            Set(host, Concat(hostTable, Value & ","));
         Size: =24
         Text: ="Set Hosts"
         Width: =216
@@ -22,7 +62,8 @@ SetPermissions As screen:
 
     SetVIP As button:
         Height: =70
-        OnSelect: =Set(VIPhost,VIPText.Text)
+        OnSelect: |
+            =Set(VIPhost,VIPText.Text)
         Size: =24
         Text: ="Set VIPs"
         Width: =216

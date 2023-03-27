@@ -433,17 +433,137 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.testtext"
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.testtext",
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "testtext",
+                "member": "AccessibleLabel",
+                "module": "SetPermissions",
+                "type": "SetPermissions.HostsGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SetPermissions",
+                "type": "SetPermissions.HostsGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SetPermissions",
+                "type": "SetPermissions.HostsGallery.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.Icon2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SetPermissions.HostsGallery.Icon2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SetPermissions",
+                "type": "SetPermissions.HostsGallery.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.table"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.table",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "table",
                 "module": "App",
                 "type": "App"
               }
@@ -463,17 +583,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.table"
+                  "fullyQualifiedName": "App.startTimer_refresh"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.table",
+                  "fullyQualifiedName": "App.startTimer_refresh",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "table",
+                "member": "startTimer_refresh",
                 "module": "App",
                 "type": "App"
               }
@@ -523,17 +643,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.startTimer_refresh"
+                  "fullyQualifiedName": "App.testtext"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.startTimer_refresh",
+                  "fullyQualifiedName": "App.testtext",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "startTimer_refresh",
+                "member": "testtext",
                 "module": "App",
                 "type": "App"
               }

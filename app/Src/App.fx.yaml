@@ -10,6 +10,7 @@ App As appinfo:
         Set(testVar,true);
         Set(VIPhost,"李昱增,邱志威");
         Set(host,"李昱增,吳長信,王惠玲,吳銘祥,周沛薇,邱志威");
+        ClearCollect(hostTable, Split(host,","));
         Set(startTimer,true);
         Set(startTimer_refresh,true);
         Set(partyTime,"March 24, 2023 05:55 PM");
