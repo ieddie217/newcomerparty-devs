@@ -5,7 +5,7 @@ App As appinfo:
         Set(r_count,0);
         Set(testtext, "");
         Set(table, 1);
-        Set(devs,"李昱增,王虞皓");
+        Set(devs,"李昱增");
         Set(VIPhost,"李昱增,邱志威");
         Set(host,"李昱增,吳長信,王惠玲,吳銘祥,周沛薇,邱志威");
         Set(startTimer,true);
@@ -101,4 +101,5 @@ App As appinfo:
         {round:10,table:8,n1:"王虞皓",n2:"王馨慧",n3:"孫瑞宏",n4:"吳長信"}
         )
         
+    StartScreen: =
 

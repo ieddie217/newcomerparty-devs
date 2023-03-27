@@ -14,7 +14,7 @@ SetPermissions As screen:
         Height: =70
         OnSelect: =Set(host,HostText.Text)
         Size: =24
-        Text: ="Set"
+        Text: ="Set Hosts"
         Width: =216
         X: =383
         Y: =151
@@ -24,7 +24,7 @@ SetPermissions As screen:
         Height: =70
         OnSelect: =Set(VIPhost,VIPText.Text)
         Size: =24
-        Text: ="Set"
+        Text: ="Set VIPs"
         Width: =216
         X: =383
         Y: =66
@@ -33,9 +33,9 @@ SetPermissions As screen:
     HostText As text:
         Default: =""
         Height: =70
-        HintText: ="Set hosts"
+        HintText: ="Name1,Name2,Name3..."
         Size: =21
-        Width: =266
+        Width: =332
         X: =40
         Y: =151
         ZIndex: =4
@@ -43,9 +43,9 @@ SetPermissions As screen:
     VIPText As text:
         Default: =""
         Height: =70
-        HintText: ="Set VIPs"
+        HintText: ="Name1,Name2,Name3..."
         Size: =21
-        Width: =266
+        Width: =332
         X: =40
         Y: =66
         ZIndex: =5
