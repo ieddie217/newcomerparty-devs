@@ -116,6 +116,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Gallery Version"
+    "SetPermissions",
+    "RandomSeats"
   ]
 }

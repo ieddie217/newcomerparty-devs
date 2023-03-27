@@ -1,0 +1,47 @@
+SetPermissions As screen:
+
+    Button1 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =320
+        Y: =406
+        ZIndex: =1
+
+    Button1_1 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =320
+        Y: =66
+        ZIndex: =2
+
+    Button1_2 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =320
+        Y: =148
+        ZIndex: =3
+
+    Button1_3 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =320
+        Y: =236
+        ZIndex: =4
+
+    Button1_4 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =320
+        Y: =323
+        ZIndex: =5
+

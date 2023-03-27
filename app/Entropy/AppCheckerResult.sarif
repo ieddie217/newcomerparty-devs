@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Exit.AccessibleLabel"
+                  "fullyQualifiedName": "RandomSeats.Exit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Exit.AccessibleLabel",
+                  "fullyQualifiedName": "RandomSeats.Exit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Exit"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Exit"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Exit.TabIndex"
+                  "fullyQualifiedName": "RandomSeats.Exit.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Exit.TabIndex",
+                  "fullyQualifiedName": "RandomSeats.Exit.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Exit"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Exit"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.TimeLeft.AutoStart"
+                  "fullyQualifiedName": "RandomSeats.TimeLeft.AutoStart"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.TimeLeft.AutoStart",
+                  "fullyQualifiedName": "RandomSeats.TimeLeft.AutoStart",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AutoStart",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.TimeLeft"
+                "module": "RandomSeats",
+                "type": "RandomSeats.TimeLeft"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "RandomSeats.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "RandomSeats.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.TextInput1"
+                "module": "RandomSeats",
+                "type": "RandomSeats.TextInput1"
               }
             }
           ],
@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Refresh.AccessibleLabel"
+                  "fullyQualifiedName": "RandomSeats.Refresh.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Refresh.AccessibleLabel",
+                  "fullyQualifiedName": "RandomSeats.Refresh.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Refresh"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Refresh"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Refresh.TabIndex"
+                  "fullyQualifiedName": "RandomSeats.Refresh.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Refresh.TabIndex",
+                  "fullyQualifiedName": "RandomSeats.Refresh.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Refresh"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Refresh"
               }
             }
           ],
@@ -194,19 +194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Gallery8.AccessibleLabel"
+                  "fullyQualifiedName": "RandomSeats.Gallery8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Gallery8.AccessibleLabel",
+                  "fullyQualifiedName": "RandomSeats.Gallery8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Gallery8"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Gallery8"
               }
             }
           ],
@@ -224,19 +224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gallery Version'.Gallery8.TabIndex"
+                  "fullyQualifiedName": "RandomSeats.Gallery8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Gallery Version'.Gallery8.TabIndex",
+                  "fullyQualifiedName": "RandomSeats.Gallery8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Gallery Version",
-                "type": "'Gallery Version'.Gallery8"
+                "module": "RandomSeats",
+                "type": "RandomSeats.Gallery8"
               }
             }
           ],
