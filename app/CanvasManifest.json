@@ -117,6 +117,7 @@
   },
   "ScreenOrder": [
     "SetPermissions",
-    "RandomSeats"
+    "RandomSeats",
+    "Screen1"
   ]
 }

@@ -124,7 +124,7 @@ RandomSeats As screen:
         TemplatePadding: =0
         TemplateSize: =190
         WrapCount: =2
-        Y: =632
+        Y: =634
         ZIndex: =9
 
         Title12 As label:
