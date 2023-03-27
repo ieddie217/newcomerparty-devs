@@ -1,0 +1,311 @@
+"'Gallery Version' As screen":
+    BackgroundImage: =BG3
+
+    bgImage As image:
+        Height: =1136
+        Image: |-
+            =If(IsBlank(backgroundImage
+            ), BG, backgroundImage)
+        Width: =640
+        ZIndex: =1
+
+    Label2 As label:
+        Align: =Align.Center
+        Height: =72
+        Size: =21
+        Text: =Index(Table1_1,1).Value
+        Width: =112
+        X: =416
+        Y: =1059
+        ZIndex: =2
+
+    Label5 As label:
+        Color: =RGBA(0, 0, 0, 0)
+        Height: =82
+        Size: =21
+        Text: =Concatenate(User().FullName,host)
+        Width: =173
+        X: =450
+        Y: =148
+        ZIndex: =3
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Dancing Script'
+        Height: =54
+        Size: =40
+        Text: =$"Round {r_count}"
+        Width: =204
+        X: =220
+        Y: =543
+        ZIndex: =4
+
+    NextRoundButton As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(244, 244, 244, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Dancing Script'
+        Height: =86
+        HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
+        HoverFill: =ColorFade(RGBA(56, 96, 178, 0), 100%)
+        OnSelect: |-
+            =Refresh(Table1_1);
+            Set(r_count,Int(Index(Table1_1,1).Value));
+            If (
+                (r_count>0) || ( (r_count=0) && (Find(User().FullName,VIPhost)>0)),
+                UpdateContext({startTimer:false});
+                UpdateContext({startTimer:true});
+                UpdateContext({startTimer_refresh:false});
+            );
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(244, 244, 244, 0)
+        RadiusBottomLeft: =60
+        RadiusBottomRight: =60
+        RadiusTopLeft: =60
+        RadiusTopRight: =60
+        Size: =22
+        Text: ="Next Round"
+        Visible: =If(Find(User().FullName,host)>0,true,false)
+        Width: =108
+        X: =145
+        Y: =290
+        ZIndex: =5
+
+    Label4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Bold
+        Height: =147
+        Size: =120
+        Text: =First(r_data).table
+        Width: =167
+        X: =312
+        Y: =190
+        ZIndex: =6
+
+    NextRoundTimer As timer:
+        Duration: =5000
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =75
+        OnTimerEnd: |
+            =UpdateContext({startTimer:false});
+        OnTimerStart: |-
+            =Refresh(Table1_1);
+            Set(r_count,Int(Index(Table1_1,1).Value));
+            Set(r_count, r_count+1);
+            If ( r_count>10, Set(r_count,1) );
+            Switch(Mod(r_count,4),0,UpdateContext({backgroundImage: BG}),1,UpdateContext({backgroundImage: BG2}),2,UpdateContext({backgroundImage: BG3}),3,UpdateContext({backgroundImage: BG4}));
+            ClearCollect(r_data,Filter(allrounds,round=r_count&&(n1=User().FullName||n2=User().FullName||n3=User().FullName||n4=User().FullName)));
+            Patch(Table1_1,LookUp(Table1_1,Key="Cur_round"),{Value:r_count});
+        Start: =startTimer
+        Visible: =false
+        Width: =192
+        X: =103
+        Y: =984
+        ZIndex: =7
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =77
+        Width: =640
+        Y: =1059
+        ZIndex: =8
+
+    "Gallery8 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DelayItemLoading: =true
+        Height: =502
+        Items: =Filter(allrounds,round=r_count)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.n1 = User().FullName || ThisItem.n2 = User().FullName ||ThisItem.n3 = User().FullName ||ThisItem.n4 = User().FullName , Color.Orange, Color.Transparent)
+        TemplatePadding: =0
+        TemplateSize: =190
+        WrapCount: =2
+        Y: =632
+        ZIndex: =9
+
+        Title12 As label:
+            Align: =Align.Center
+            Color: =RGBA(241, 244, 249, 1)
+            Height: =52
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =26
+            Text: =$"Table {ThisItem.table}"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =148
+            X: =104
+            Y: =30
+            ZIndex: =1
+
+        Subtitle10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =81
+            LineHeight: =1.5
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22
+            Text: =Concatenate(ThisItem.n1, "   " ,ThisItem.n2, "   ",ThisItem.n3, "   ", ThisItem.n4)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =59
+            Y: =82
+            ZIndex: =2
+
+        Separator12 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =191
+            X: =64
+            Y: =79
+            ZIndex: =5
+
+        Image2 As image:
+            Height: =48
+            Image: ='ppt_icon資產 112'
+            OnSelect: =Select(Parent)
+            Width: =84
+            X: =52
+            Y: =20
+            ZIndex: =6
+
+    refresh_bell As image:
+        Height: =105
+        Image: =bell
+        Width: =105
+        X: =403
+        Y: =498
+        ZIndex: =10
+
+    RefreshTimer As timer:
+        Duration: =4000
+        Height: =75
+        OnTimerEnd: |-
+            =UpdateContext({startTimer_refresh:false});
+        OnTimerStart: |
+            =ClearCollect(r_data,Filter(allrounds,round=r_count&&(n1=User().FullName||n2=User().FullName||n3=User().FullName||n4=User().FullName)));
+            Switch(Mod(r_count,4),0,UpdateContext({backgroundImage: BG}),1,UpdateContext({backgroundImage: BG2}),2,UpdateContext({backgroundImage: BG3}),3,UpdateContext({backgroundImage: BG4}));
+        Start: =startTimer_refresh
+        Visible: =false
+        Width: =216
+        X: =312
+        Y: =984
+        ZIndex: =11
+
+    Refresh As icon.Sync:
+        BorderColor: =RGBA(255, 255, 0, 1)
+        Color: =RGBA(255, 255, 255, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Height: =81
+        Icon: =Icon.Sync
+        OnSelect: |-
+            =Refresh(Table1_1);
+            Set(r_count,Int(Index(Table1_1,1).Value));
+            If (
+                r_count>0,
+                UpdateContext({startTimer_refresh:false});
+                UpdateContext({startTimer_refresh:true});
+            )
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =396
+        X: =145
+        Y: =522
+        ZIndex: =12
+
+    Loading_NextRound As image:
+        Height: =1140
+        Image: ='請閉上眼許願 你想跟誰坐'
+        Visible: =startTimer
+        Width: =642
+        ZIndex: =13
+
+    Loading_Refresh As image:
+        Height: =1136
+        Image: ='請閉上眼許願 你想跟誰坐'
+        Visible: =//startTimer_refresh
+        Width: =640
+        ZIndex: =14
+
+    ResetRound As button:
+        Height: =86
+        OnSelect: |-
+            =Patch(Table1_1,LookUp(Table1_1,Key="Cur_round"),{Value:Int(TextInput1)});
+        Size: =24
+        Text: ="Reset"
+        Visible: |-
+            =false
+            //If(
+            //    Find(User().FullName,devs)>0,
+            //    true,
+            //    false
+            ///)
+        Width: =118
+        X: =12
+        Y: =517
+        ZIndex: =15
+
+    TextInput1 As text:
+        Default: =""
+        Height: =105
+        Size: =21
+        Visible: |-
+            =//Find(User().FullName,devs)>0
+            false
+        Width: =130
+        Y: =396
+        ZIndex: =16
+
+    Maint As image:
+        Height: =1136
+        Image: =Timeup
+        Visible: =maint&&(Find(User().FullName,devs)<1)
+        Width: =640
+        ZIndex: =17
+
+    TimeLeft As timer:
+        AutoStart: =true
+        Color: =RGBA(219, 214, 143, 1)
+        DisplayMode: =DisplayMode.View
+        Duration: =DateDiff(Now(),DateTimeValue(partyTime) ,TimeUnit.Milliseconds)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =103
+        OnTimerEnd: =Set(maint,false)
+        Size: =55
+        Text: |-
+            =Text(Time(0, 0, (Self.Duration-Self.Value)/1000), "[$-en-US]hh:mm:ss")
+        Visible: =maint&&(Find(User().FullName,devs)<1)
+        Width: =309
+        X: =165
+        Y: =372
+        ZIndex: =18
+
+    Exit As icon.Cancel:
+        Color: =RGBA(241, 244, 249, 1)
+        Icon: =Icon.Cancel
+        OnSelect: =Exit()
+        X: =528
+        Y: =32
+        ZIndex: =19
+

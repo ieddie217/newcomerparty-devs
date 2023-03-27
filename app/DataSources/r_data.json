@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "r_data",
+    "Type": "CollectionDataSourceInfo"
+  }
+]

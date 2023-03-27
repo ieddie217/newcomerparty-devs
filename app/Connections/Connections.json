@@ -1,0 +1,86 @@
+{
+  "c134f632-9f12-4aef-a221-73a4e4fbfc02": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/releases/ase-v3/1.0.1622.3200/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "groups%252F8df5e1a8-3e93-4a8d-bf49-0645fb98ad5c,b%2521vtTT2VIZgUOl-CNWTuLYKe9DOQR_DvVIoMlp8cOtmPD_StVtJTV9Q5dJSWbcFenw,0164CIITI7VIS5DWB6AFDZFBYONLDZXKMX": {
+        "dataSources": {
+          "Table1_1": {
+            "tableName": "{3EF205B7-78C8-4FD3-97BB-56CB0B5CBE23}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Table1_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c134f632-9f12-4aef-a221-73a4e4fbfc02"
+  },
+  "c9824b2d-5d08-447f-9577-1f6a56c06dae": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Microsoft Teams",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1625/1.0.1625.3226/teams/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_teams",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "fe1cde15-e074-4deb-9a8c-93ecfe83c945"
+    ],
+    "id": "c9824b2d-5d08-447f-9577-1f6a56c06dae"
+  },
+  "fe1cde15-e074-4deb-9a8c-93ecfe83c945": {
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "c9824b2d-5d08-447f-9577-1f6a56c06dae": {
+          "value": "shared_teams"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "43f992db-7f91-4c1d-b885-23f712c02107"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_teams": {
+          "value": "c9824b2d-5d08-447f-9577-1f6a56c06dae"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "43f992db-7f91-4c1d-b885-23f712c02107"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PartyMessenger"
+    ],
+    "dependencies": {
+      "shared_teams": "c9824b2d-5d08-447f-9577-1f6a56c06dae"
+    },
+    "dependents": [],
+    "id": "fe1cde15-e074-4deb-9a8c-93ecfe83c945"
+  }
+}
