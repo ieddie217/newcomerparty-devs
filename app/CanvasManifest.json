@@ -101,11 +101,11 @@
     "Id": "d0e296a3-a43d-4560-b7f3-a94f2416e6ea",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "今晚你想跟誰同桌",
+    "Name": "今晚你想跟誰同桌_development",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "今晚你想跟誰同桌",
+    "AppName": "今晚你想跟誰同桌_development",
     "BackgroundColor": "rgba(0, 0, 0, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",
