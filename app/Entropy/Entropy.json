@@ -32,12 +32,10 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/27/2023 07:20:23",
+  "HeaderLastSavedDateTimeUTC": "03/27/2023 07:21:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "c134f632-9f12-4aef-a221-73a4e4fbfc02": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1725f9f61d9343769675ad5946cffff3\"",
-    "c9824b2d-5d08-447f-9577-1f6a56c06dae": "\"/providers/microsoft.powerapps/apis/shared_teams/connections/9b57a3268fe74703ba86ef3b619b84cb\"",
-    "fe1cde15-e074-4deb-9a8c-93ecfe83c945": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/43f992db-7f91-4c1d-b885-23f712c02107\""
+    "c134f632-9f12-4aef-a221-73a4e4fbfc02": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/1725f9f61d9343769675ad5946cffff3\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -70,11 +68,10 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "allrounds": 3,
-    "CustomGallerySample": 1,
-    "PartyMessenger": 0,
-    "r_data": 4,
-    "Table1_1": 2
+    "allrounds": 2,
+    "CustomGallerySample": 0,
+    "r_data": 3,
+    "Table1_1": 1
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
