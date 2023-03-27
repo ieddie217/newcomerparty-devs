@@ -33,7 +33,9 @@ SetPermissions As screen:
 
         Icon2 As icon.CancelBadge:
             Icon: =Icon.CancelBadge
-            OnSelect: =Remove(hostTable,ThisItem)
+            OnSelect: |-
+                =Remove(hostTable,ThisItem);
+                Set(host, Concat(hostTable, Value & ","));
             Width: =34
             X: =130
             Y: =18
@@ -126,7 +128,9 @@ SetPermissions As screen:
 
         Icon2_1 As icon.CancelBadge:
             Icon: =Icon.CancelBadge
-            OnSelect: =Remove(hostTable,ThisItem)
+            OnSelect: |-
+                =Remove(vipTable,ThisItem);
+                Set(VIPhost, Concat(vipTable, Value & ","));
             Width: =34
             X: =130
             Y: =18
