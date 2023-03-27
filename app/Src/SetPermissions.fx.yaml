@@ -1,47 +1,52 @@
 SetPermissions As screen:
 
-    Button1 As button:
+    StartButton As button:
         Height: =70
+        OnSelect: =Navigate(RandomSeats)
         Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =320
-        Y: =406
+        Text: ="Start"
+        Width: =217
+        X: =383
+        Y: =1002
         ZIndex: =1
 
-    Button1_1 As button:
+    SetHost As button:
         Height: =70
+        OnSelect: =Set(host,HostText.Text)
         Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =320
-        Y: =66
+        Text: ="Set"
+        Width: =216
+        X: =383
+        Y: =151
         ZIndex: =2
 
-    Button1_2 As button:
+    SetVIP As button:
         Height: =70
+        OnSelect: =Set(VIPhost,VIPText.Text)
         Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =320
-        Y: =148
+        Text: ="Set"
+        Width: =216
+        X: =383
+        Y: =66
         ZIndex: =3
 
-    Button1_3 As button:
+    HostText As text:
+        Default: =""
         Height: =70
-        Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =320
-        Y: =236
+        HintText: ="Set hosts"
+        Size: =21
+        Width: =266
+        X: =40
+        Y: =151
         ZIndex: =4
 
-    Button1_4 As button:
+    VIPText As text:
+        Default: =""
         Height: =70
-        Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =320
-        Y: =323
+        HintText: ="Set VIPs"
+        Size: =21
+        Width: =266
+        X: =40
+        Y: =66
         ZIndex: =5
 
