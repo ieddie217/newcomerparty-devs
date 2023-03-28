@@ -1,2 +1,32 @@
 MainScreen As screen:
 
+    Button1 As button:
+        Height: =70
+        OnSelect: =Navigate(SetPermissionsScreen)
+        Size: =24
+        Text: |-
+            ="Roles
+            "
+        Width: =280
+        X: =186
+        Y: =237
+        ZIndex: =1
+
+    Button1_1 As button:
+        Height: =70
+        OnSelect: =Navigate(RandomSeatsScreen)
+        Size: =24
+        Text: ="Shuffle"
+        Width: =280
+        X: =186
+        Y: =557
+        ZIndex: =2
+
+    Exit_1 As icon.Cancel:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Cancel
+        OnSelect: =Exit()
+        X: =528
+        Y: =32
+        ZIndex: =3
+

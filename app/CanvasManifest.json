@@ -117,7 +117,6 @@
   "ScreenOrder": [
     "MainScreen",
     "SetPermissionsScreen",
-    "RandomSeatsScreen",
-    "Screen1"
+    "RandomSeatsScreen"
   ]
 }

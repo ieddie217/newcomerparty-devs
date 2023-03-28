@@ -304,7 +304,7 @@ RandomSeatsScreen As screen:
     Exit As icon.Cancel:
         Color: =RGBA(241, 244, 249, 1)
         Icon: =Icon.Cancel
-        OnSelect: =Exit()
+        OnSelect: =Navigate(MainScreen)
         X: =528
         Y: =32
         ZIndex: =19

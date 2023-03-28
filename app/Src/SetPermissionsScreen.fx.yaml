@@ -7,7 +7,7 @@ SetPermissionsScreen As screen:
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         WrapCount: =2
-        Y: =628
+        Y: =601
         ZIndex: =1
 
         Title3 As label:
@@ -64,8 +64,8 @@ SetPermissionsScreen As screen:
         Size: =24
         Text: ="Add Host"
         Width: =216
-        X: =383
-        Y: =464
+        X: =384
+        Y: =484
         ZIndex: =2
 
     SetVIP As button:
@@ -80,8 +80,8 @@ SetPermissionsScreen As screen:
         Size: =24
         Text: ="Add VIP"
         Width: =216
-        X: =383
-        Y: =66
+        X: =384
+        Y: =88
         ZIndex: =3
 
     HostText As text:
@@ -91,7 +91,7 @@ SetPermissionsScreen As screen:
         Size: =21
         Width: =332
         X: =40
-        Y: =464
+        Y: =484
         ZIndex: =4
 
     VIPText As text:
@@ -101,7 +101,7 @@ SetPermissionsScreen As screen:
         Size: =21
         Width: =332
         X: =40
-        Y: =66
+        Y: =88
         ZIndex: =5
 
     "VIPGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
@@ -111,7 +111,7 @@ SetPermissionsScreen As screen:
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         WrapCount: =2
-        Y: =158
+        Y: =194
         ZIndex: =6
 
         Title3_1 As label:
@@ -145,4 +145,11 @@ SetPermissionsScreen As screen:
             X: =130
             Y: =18
             ZIndex: =4
+
+    Arrow1 As arrow.backArrow:
+        OnSelect: =Navigate(MainScreen)
+        Width: =46
+        X: =579
+        Y: =15
+        ZIndex: =7
 
