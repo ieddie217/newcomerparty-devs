@@ -57,6 +57,15 @@ SetPermissionsScreen As screen:
             =Collect(hostTable, HostText.Text);
             Set(host, Concat(hostTable, Value & ","));
             Reset(HostText);
+            
+            Patch(
+                RandomSeatingRoles,
+                Defaults(RandomSeatingRoles),
+                {Name: HostText.Text},
+                {HOST: 'HOST (RandomSeatingRoles)'.Yes}
+            );
+            Set(host, Concat(Filter(RandomSeatingRoles, 'HOST (RandomSeatingRoles)'.Yes ), Name & ","));
+            Reset(HostText);
         Size: =24
         Text: ="Add Host"
         Width: =216
