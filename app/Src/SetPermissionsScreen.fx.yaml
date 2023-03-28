@@ -132,7 +132,7 @@ SetPermissionsScreen As screen:
             Icon: =Icon.CancelBadge
             OnSelect: |-
                 =Remove(RandomSeatingRoles,ThisItem);
-                Set(VIPhost, Concat(Filter(RandomSeatingRoles, Role="VIP"), Name & ","));
+                //Set(VIPhost, Concat(Filter(RandomSeatingRoles, Role="VIP"), Name & ","));
             Width: =34
             X: =130
             Y: =18
