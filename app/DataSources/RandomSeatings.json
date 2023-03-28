@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crebe_randomseating",
+    "MaxGetRowsCount": 500,
     "Name": "RandomSeatings",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "負責人",

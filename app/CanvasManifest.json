@@ -115,8 +115,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "MainScreen",
     "SetPermissionsScreen",
     "RandomSeatsScreen",
-    "Screen2"
+    "Screen1"
   ]
 }
