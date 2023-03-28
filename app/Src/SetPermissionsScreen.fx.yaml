@@ -34,7 +34,8 @@ SetPermissionsScreen As screen:
         Icon2 As icon.CancelBadge:
             Icon: =Icon.CancelBadge
             OnSelect: |-
-                =Remove(RandomSeatingRoles,ThisItem);
+                =//Remove(RandomSeatingRoles,ThisItem);
+                Patch(RandomSeatingRoles, LookUp(RandomSeatingRoles, Name=ThisItem.Name), {HOST: 'HOST (RandomSeatingRoles)'.No});
                 Set(host, Concat(Filter(RandomSeatingRoles, 'HOST (RandomSeatingRoles)'.Yes ), Name & ","));
             Width: =34
             X: =130
@@ -137,7 +138,8 @@ SetPermissionsScreen As screen:
         Icon2_1 As icon.CancelBadge:
             Icon: =Icon.CancelBadge
             OnSelect: |-
-                =Remove(RandomSeatingRoles,ThisItem);
+                =//Remove(RandomSeatingRoles,ThisItem);
+                Patch(RandomSeatingRoles, LookUp(RandomSeatingRoles, Name=ThisItem.Name), {VIP: 'VIP (RandomSeatingRoles)'.No});
                 Set(VIPhost, Concat(Filter(RandomSeatingRoles, 'VIP (RandomSeatingRoles)'.Yes ), Name & ","));
             Width: =34
             X: =130
