@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crebe_randomseatings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crebe_randomseating",
+    "Name": "RandomSeatings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "負責人",
+      "createdby": "建立者",
+      "createdon": "建立時間",
+      "createdonbehalfby": "建立者 (代理人)",
+      "crebe_name": "Name",
+      "crebe_randomnumber": "RandomNumber",
+      "crebe_randomseating_AsyncOperations": "系統作業",
+      "crebe_randomseating_BulkDeleteFailures": "大量刪除失敗",
+      "crebe_randomseating_DuplicateBaseRecord": "重複資料記錄 (crebe_randomseating_DuplicateBaseRecord)",
+      "crebe_randomseating_DuplicateMatchingRecord": "重複資料記錄 (crebe_randomseating_DuplicateMatchingRecord)",
+      "crebe_randomseating_MailboxTrackingFolders": "信箱自動追蹤資料夾",
+      "crebe_randomseating_PrincipalObjectAttributeAccesses": "欄位共用",
+      "crebe_randomseating_ProcessSession": "程序工作階段",
+      "crebe_randomseating_SyncErrors": "同步處理錯誤",
+      "crebe_randomseatingid": "RandomSeating",
+      "importsequencenumber": "匯入序號",
+      "modifiedby": "修改者",
+      "modifiedon": "修改日期",
+      "modifiedonbehalfby": "修改者 (代理人)",
+      "overriddencreatedon": "記錄建立時間",
+      "owningbusinessunit": "擁有業務單位",
+      "owningteam": "擁有團隊",
+      "owninguser": "擁有使用者",
+      "statecode": "狀態",
+      "statuscode": "狀態原因",
+      "timezoneruleversionnumber": "時區規則版本號碼",
+      "utcconversiontimezonecode": "UTC 轉換時區代碼",
+      "versionnumber": "版本號碼"
+    },
+    "PreferredName": "RandomSeatings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "RandomSeatings (Views)",
+    "Name": "_crebe_randomseating_views",
+    "RelatedEntityName": "RandomSeatings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0754d6b2-62cf-47db-be23-cd60acabc835": "非使用中 RandomSeatings",
+      "5fadf851-d733-4724-9d2b-9c4b8c4fd3eb": "使用中 RandomSeatings",
+      "878019ef-7031-446b-9541-aa52d7036ec4": "RandomSeating相關檢視",
+      "913adc6d-8925-44dd-92d9-f73e63a9b029": "RandomSeating進階尋找檢視表",
+      "98a4a2dc-59e8-4347-81a2-39b20f896ce5": "RandomSeating查詢檢視表"
+    }
+  },
+  {
+    "DisplayName": "狀態 (RandomSeatings)",
+    "Name": "crebe_randomseating_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "使用中",
+      "1": "非使用中"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "RandomSeatings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "RandomSeatings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "狀態原因 (RandomSeatings)",
+    "Name": "crebe_randomseating_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "使用中",
+      "2": "非使用中"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "RandomSeatings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "RandomSeatings",
+    "Type": "OptionSetInfo"
+  }
+]

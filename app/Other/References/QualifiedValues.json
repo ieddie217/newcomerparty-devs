@@ -6,6 +6,13 @@
       "Values": {
         "資訊": "ba6522af-e71b-df11-aa01-00155d2a9006"
       }
+    },
+    {
+      "Kind": "default.cds_crebe_randomseating_forms",
+      "Namespace": "RandomSeatings (Forms)",
+      "Values": {
+        "資訊": "f23b4d26-baad-4cb0-8913-e9beae9bf764"
+      }
     }
   ]
 }

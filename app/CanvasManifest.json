@@ -100,7 +100,6 @@
     "FileID": "d0e296a3-a43d-4560-b7f3-a94f2416e6ea",
     "Id": "d0e296a3-a43d-4560-b7f3-a94f2416e6ea",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "Name": "今晚你想跟誰同桌_development",
     "OriginatingVersion": "1.330"
   },
@@ -117,6 +116,7 @@
   },
   "ScreenOrder": [
     "SetPermissionsScreen",
-    "RandomSeatsScreen"
+    "RandomSeatsScreen",
+    "Screen2"
   ]
 }
