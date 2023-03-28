@@ -54,12 +54,10 @@ SetPermissionsScreen As screen:
     SetHost As button:
         Height: =70
         OnSelect: |-
-            =Patch(
-                RandomSeatingRoles,
-                Defaults(RandomSeatingRoles),
-                {Name: HostText.Text},
-                {HOST: 'HOST (RandomSeatingRoles)'.Yes}
-            );
+            =If(!IsBlank(LookUp(RandomSeatingRoles, Name=HostText.Text)),
+            Patch(RandomSeatingRoles, LookUp(RandomSeatingRoles, Name=HostText.Text), {HOST: 'HOST (RandomSeatingRoles)'.Yes}),
+            Patch(RandomSeatingRoles,Defaults(RandomSeatingRoles),{Name: HostText.Text},{HOST: 'HOST (RandomSeatingRoles)'.Yes}
+            ));
             Set(host, Concat(Filter(RandomSeatingRoles, 'HOST (RandomSeatingRoles)'.Yes ), Name & ","));
             Reset(HostText);
         Size: =24
@@ -72,12 +70,12 @@ SetPermissionsScreen As screen:
     SetVIP As button:
         Height: =70
         OnSelect: |-
-            =If(!IsBlank(LookUp(RandomSeatingRoles, Name=HostText.Text)),
-            Patch(RandomSeatingRoles, LookUp(RandomSeatingRoles, Name=HostText.Text), {HOST: 'HOST (RandomSeatingRoles)'.Yes}),
-            Patch(RandomSeatingRoles,Defaults(RandomSeatingRoles),{Name: HostText.Text},{HOST: 'HOST (RandomSeatingRoles)'.Yes}
+            =If(!IsBlank(LookUp(RandomSeatingRoles, Name=VIPText.Text)),
+            Patch(RandomSeatingRoles, LookUp(RandomSeatingRoles, Name=VIPText.Text), {VIP: 'VIP (RandomSeatingRoles)'.Yes}),
+            Patch(RandomSeatingRoles,Defaults(RandomSeatingRoles),{Name: VIPText.Text},{VIP: 'VIP (RandomSeatingRoles)'.Yes}
             ));
-            Set(host, Concat(Filter(RandomSeatingRoles, 'HOST (RandomSeatingRoles)'.Yes ), Name & ","));
-            Reset(HostText);
+            Set(VIPhost, Concat(Filter(RandomSeatingRoles, 'VIP (RandomSeatingRoles)'.Yes ), Name & ","));
+            Reset(VIPText);
         Size: =24
         Text: ="Add VIP"
         Width: =216
