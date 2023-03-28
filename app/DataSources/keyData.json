@@ -1,0 +1,92 @@
+[
+  {
+    "DisplayName": "keyData (Views)",
+    "Name": "_crebe_keydata_views",
+    "RelatedEntityName": "keyData",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
+  },
+  {
+    "DisplayName": "狀態 (keyData)",
+    "Name": "crebe_keydata_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "使用中",
+      "1": "非使用中"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "keyData"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "keyData",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "狀態原因 (keyData)",
+    "Name": "crebe_keydata_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "使用中",
+      "2": "非使用中"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "keyData"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "keyData",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crebe_keydatas",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crebe_keydata",
+    "MaxGetRowsCount": 500,
+    "Name": "keyData",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "負責人",
+      "createdby": "建立者",
+      "createdon": "建立時間",
+      "createdonbehalfby": "建立者 (代理人)",
+      "crebe_keydata_AsyncOperations": "系統作業",
+      "crebe_keydata_BulkDeleteFailures": "大量刪除失敗",
+      "crebe_keydata_DuplicateBaseRecord": "重複資料記錄 (crebe_keydata_DuplicateBaseRecord)",
+      "crebe_keydata_DuplicateMatchingRecord": "重複資料記錄 (crebe_keydata_DuplicateMatchingRecord)",
+      "crebe_keydata_MailboxTrackingFolders": "信箱自動追蹤資料夾",
+      "crebe_keydata_PrincipalObjectAttributeAccesses": "欄位共用",
+      "crebe_keydata_ProcessSession": "程序工作階段",
+      "crebe_keydata_SyncErrors": "同步處理錯誤",
+      "crebe_keydataid": "keyData",
+      "crebe_name": "Key",
+      "crebe_value": "Value",
+      "importsequencenumber": "匯入序號",
+      "modifiedby": "修改者",
+      "modifiedon": "修改日期",
+      "modifiedonbehalfby": "修改者 (代理人)",
+      "overriddencreatedon": "記錄建立時間",
+      "owningbusinessunit": "擁有業務單位",
+      "owningteam": "擁有團隊",
+      "owninguser": "擁有使用者",
+      "statecode": "狀態",
+      "statuscode": "狀態原因",
+      "timezoneruleversionnumber": "時區規則版本號碼",
+      "utcconversiontimezonecode": "UTC 轉換時區代碼",
+      "versionnumber": "版本號碼"
+    },
+    "PreferredName": "keyData",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

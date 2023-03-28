@@ -50,8 +50,8 @@ RandomSeatsScreen As screen:
         HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
         HoverFill: =ColorFade(RGBA(56, 96, 178, 0), 100%)
         OnSelect: |-
-            =Refresh(Table1_1);
-            Set(r_count,Int(Index(Table1_1,1).Value));
+            =Refresh(keyData);
+            Set(r_count,Int(Index(keyData,1).Value));
             If (
                 (r_count>0) || ( (r_count=0) && (Find(User().FullName,VIPhost)>0)),
                 UpdateContext({startTimer:false});
@@ -218,8 +218,8 @@ RandomSeatsScreen As screen:
         Height: =81
         Icon: =Icon.Sync
         OnSelect: |-
-            =Refresh(Table1_1);
-            Set(r_count,Int(Index(Table1_1,1).Value));
+            =Refresh(keyData);
+            Set(r_count,Int(Index(keyData,1).Value));
             If (
                 r_count>0,
                 UpdateContext({startTimer_refresh:false});
