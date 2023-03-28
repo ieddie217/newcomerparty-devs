@@ -116,8 +116,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "SetPermissions",
-    "RandomSeats",
-    "Screen1"
+    "SetPermissionsScreen",
+    "RandomSeatsScreen"
   ]
 }

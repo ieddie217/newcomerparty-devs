@@ -1,7 +1,7 @@
-SetPermissions As screen:
+SetPermissionsScreen As screen:
 
     "HostsGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =255
+        Height: =354
         Items: =hostTable
         Layout: =Layout.Vertical
         TemplatePadding: =0
@@ -43,7 +43,7 @@ SetPermissions As screen:
 
     StartButton As button:
         Height: =70
-        OnSelect: =Navigate(RandomSeats)
+        OnSelect: =Navigate(RandomSeatsScreen)
         Size: =24
         Text: ="Start"
         Width: =217
@@ -97,7 +97,7 @@ SetPermissions As screen:
         Y: =66
         ZIndex: =5
 
-    "HostsGallery_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+    "VIPGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =255
         Items: =vipTable
         Layout: =Layout.Vertical

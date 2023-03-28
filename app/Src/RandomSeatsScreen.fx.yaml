@@ -1,4 +1,4 @@
-RandomSeats As screen:
+RandomSeatsScreen As screen:
     BackgroundImage: =BG3
 
     bgImage As image:
