@@ -5,13 +5,7 @@
     "RelatedEntityName": "keyData",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
-    "ViewInfoNameMapping": {
-      "00c59f88-7d42-4f82-8d36-bbbdf51a75f6": "keyData進階尋找檢視表",
-      "2f43c47b-3bdf-4a59-88c5-8f6caf9e0cc7": "keyData相關檢視",
-      "6bc15612-dcd4-4c1b-93f4-4bc73bd45d38": "非使用中 keyData",
-      "b29dbfa7-4f79-48f2-a973-58dcd2b470c1": "使用中 keyData",
-      "ee74f925-5b04-4285-967c-c4f04aaea6d3": "keyData查詢檢視表"
-    }
+    "ViewInfoNameMapping": {}
   },
   {
     "DisplayName": "狀態 (keyData)",
