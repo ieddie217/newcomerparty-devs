@@ -92,13 +92,13 @@ RandomSeatsScreen As screen:
         OnTimerEnd: |
             =UpdateContext({startTimer:false});
         OnTimerStart: |-
-            =Refresh(Table1_1);
-            Set(r_count,Int(Index(Table1_1,1).Value));
+            =Refresh(keyData);
+            Set(r_count,Int(Index(keyData,1).Value));
             Set(r_count, r_count+1);
             If ( r_count>10, Set(r_count,1) );
             Switch(Mod(r_count,4),0,UpdateContext({backgroundImage: BG}),1,UpdateContext({backgroundImage: BG2}),2,UpdateContext({backgroundImage: BG3}),3,UpdateContext({backgroundImage: BG4}));
             ClearCollect(r_data,Filter(allrounds,round=r_count&&(n1=User().FullName||n2=User().FullName||n3=User().FullName||n4=User().FullName)));
-            Patch(Table1_1,LookUp(Table1_1,Key="Cur_round"),{Value:r_count});
+            Patch(keyData,LookUp(keyData,Key="Cur_round"),{Value:r_count});
         Start: =startTimer
         Visible: =false
         Width: =192
@@ -251,7 +251,7 @@ RandomSeatsScreen As screen:
     ResetRound As button:
         Height: =86
         OnSelect: |-
-            =Patch(Table1_1,LookUp(Table1_1,Key="Cur_round"),{Value:Int(TextInput1)});
+            =Patch(keyData,LookUp(keyData,Key="Cur_round"),{Value:Int(TextInput1)});
         Size: =24
         Text: ="Reset"
         Visible: |-

@@ -24,7 +24,9 @@
     {
       "Kind": "default.cds_crebe_keydata_forms",
       "Namespace": "keyData (Forms)",
-      "Values": {}
+      "Values": {
+        "資訊": "e79953cd-5387-493b-b4d4-f5562a4c6b09"
+      }
     }
   ]
 }
