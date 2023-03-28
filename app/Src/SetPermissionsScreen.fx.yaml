@@ -58,7 +58,7 @@ SetPermissionsScreen As screen:
             Set(host, Concat(hostTable, Value & ","));
             Reset(HostText);
         Size: =24
-        Text: ="Set Hosts"
+        Text: ="Add Host"
         Width: =216
         X: =383
         Y: =464
@@ -71,7 +71,7 @@ SetPermissionsScreen As screen:
             Set(VIPhost, Concat(vipTable, Value & ","));
             Reset(VIPText);
         Size: =24
-        Text: ="Set VIPs"
+        Text: ="Add VIP"
         Width: =216
         X: =383
         Y: =66
