@@ -54,11 +54,7 @@ SetPermissionsScreen As screen:
     SetHost As button:
         Height: =70
         OnSelect: |-
-            =Collect(hostTable, HostText.Text);
-            Set(host, Concat(hostTable, Value & ","));
-            Reset(HostText);
-            
-            Patch(
+            =Patch(
                 RandomSeatingRoles,
                 Defaults(RandomSeatingRoles),
                 {Name: HostText.Text},
