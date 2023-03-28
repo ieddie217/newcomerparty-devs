@@ -6,12 +6,14 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crebe_randomseatingroles",
+    "MaxGetRowsCount": 500,
     "Name": "RandomSeatingRoles",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "負責人",
       "createdby": "建立者",
       "createdon": "建立時間",
       "createdonbehalfby": "建立者 (代理人)",
+      "crebe_dev": "DEV",
       "crebe_name": "Name",
       "crebe_randomseatingroles_AsyncOperations": "系統作業",
       "crebe_randomseatingroles_BulkDeleteFailures": "大量刪除失敗",
@@ -22,7 +24,7 @@
       "crebe_randomseatingroles_ProcessSession": "程序工作階段",
       "crebe_randomseatingroles_SyncErrors": "同步處理錯誤",
       "crebe_randomseatingrolesid": "RandomSeatingRoles",
-      "crebe_role": "Role",
+      "crebe_vip": "VIP",
       "importsequencenumber": "匯入序號",
       "modifiedby": "修改者",
       "modifiedon": "修改日期",
@@ -53,6 +55,46 @@
       "aac37817-11d1-4a11-b5e4-f3e68ec49597": "非使用中 RandomSeatingRoles",
       "c6ed3350-d28a-4564-a1f4-2a5d9edcbe8e": "RandomSeatingRoles進階尋找檢視表"
     }
+  },
+  {
+    "DisplayName": "DEV (RandomSeatingRoles)",
+    "Name": "crebe_randomseatingroles_crebe_dev",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crebe_dev",
+        "OptionSetReferenceEntityName": "RandomSeatingRoles"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crebe_dev",
+    "RelatedEntityName": "RandomSeatingRoles",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "VIP (RandomSeatingRoles)",
+    "Name": "crebe_randomseatingroles_crebe_vip",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crebe_vip",
+        "OptionSetReferenceEntityName": "RandomSeatingRoles"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crebe_vip",
+    "RelatedEntityName": "RandomSeatingRoles",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "狀態 (RandomSeatingRoles)",

@@ -67,8 +67,13 @@ SetPermissionsScreen As screen:
     SetVIP As button:
         Height: =70
         OnSelect: |-
-            =//
-            //Set(VIPhost, Concat(Filter(RandomSeatingRoles, Role="VIP"), Name & ","));
+            =Patch(
+                RandomSeatingRoles,
+                Defaults(RandomSeatingRoles),
+                {Name: VIPText.Text},
+                {VIP: 'VIP (RandomSeatingRoles)'.Yes}
+            );
+            Set(VIPhost, Concat(Filter(RandomSeatingRoles, 'VIP (RandomSeatingRoles)'.Yes ), Name & ","));
             Reset(VIPText);
         Size: =24
         Text: ="Add VIP"
@@ -99,7 +104,7 @@ SetPermissionsScreen As screen:
 
     "VIPGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =255
-        Items: =RandomSeatingRoles
+        Items: =Filter(RandomSeatingRoles, 'VIP (RandomSeatingRoles)'.Yes )
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
@@ -132,7 +137,7 @@ SetPermissionsScreen As screen:
             Icon: =Icon.CancelBadge
             OnSelect: |-
                 =Remove(RandomSeatingRoles,ThisItem);
-                //Set(VIPhost, Concat(Filter(RandomSeatingRoles, Role="VIP"), Name & ","));
+                Set(VIPhost, Concat(Filter(RandomSeatingRoles, 'VIP (RandomSeatingRoles)'.Yes ), Name & ","));
             Width: =34
             X: =130
             Y: =18
