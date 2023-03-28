@@ -3,11 +3,8 @@ App As appinfo:
     OnStart: |+
         =ClearCollect(r_data,{round:0,table:0,n1:User().FullName,n2:"",n3:"",n4:""});
         Set(r_count,0);
-        Set(testtext, "");
         Set(table, 1);
         Set(devs,"李昱增,王于皓");
-        ClearCollect(newDevs,{name:"李昱增"},{name:"王于皓"});
-        Set(testVar,true);
         Set(VIPhost,"李昱增,邱志威");
         Set(host,"李昱增,吳長信,王惠玲,吳銘祥,周沛薇,邱志威");
         ClearCollect(hostTable, Split(host,","));
